@@ -6,7 +6,11 @@ import authRoutes from './routes/authRoutes.js';
 import taskRoutes from './routes/taskRoutes.js';
 import { setServers } from "node:dns/promises"; 
 
-setServers(["1.1.1.1", "8.8.8.8"]);
+try {
+  setServers(["1.1.1.1", "8.8.8.8"]);
+} catch (err) {
+  console.warn("DNS custom override bypassed:", err.message);
+}
 
 dotenv.config();
 connectDB();
