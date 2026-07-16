@@ -1,22 +1,22 @@
 :root {
-  --bg: #F8F9FA;
-  --bg-card: #FFFFFF;
-  --bg-input: #FFFFFF;
-  --text: #4B5563;
-  --text-h: #1F2937;
-  --border: #D1D5DB;
-  --border-focus: #2563EB;
-  --accent: #2563EB;
-  --accent-hover: #1D4ED8;
-  --accent-bg: rgba(37, 99, 235, 0.05);
-  --accent-border: rgba(37, 99, 235, 0.2);
+  --bg: #1e1e1e;
+  --bg-card: #2b2b2b;
+  --bg-input: #333333;
+  --text: #bdbdbd;
+  --text-h: #f5f5f5;
+  --border: #444444;
+  --border-focus: #3b82f6;
+  --accent: #3b82f6;
+  --accent-hover: #2563eb;
+  --accent-bg: rgba(59, 130, 246, 0.15);
+  --accent-border: rgba(59, 130, 246, 0.5);
   --shadow: none;
-  --shadow-md: 0 1px 3px rgba(0, 0, 0, 0.05);
+  --shadow-md: none;
 
   --sans: system-ui, -apple-system, Arial, sans-serif;
 
   font-family: var(--sans);
-  color-scheme: light;
+  color-scheme: dark;
   color: var(--text);
   background: var(--bg);
   text-rendering: optimizeLegibility;
@@ -45,12 +45,11 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
   color: var(--accent);
-  transition: color 0.15s ease;
   text-decoration: none;
 }
 
 a:hover {
-  color: #60a5fa;
+  color: var(--accent-hover);
 }
 
 select option {

@@ -127,15 +127,15 @@
 }
 
 .alert-error {
-  background: #FEE2E2;
-  border: 1px solid #FCA5A5;
-  color: #991B1B;
+  background: rgba(220, 38, 38, 0.15);
+  border: 1px solid rgba(220, 38, 38, 0.3);
+  color: #f87171;
 }
 
 .alert-success {
-  background: #D1FAE5;
-  border: 1px solid #A7F3D0;
-  color: #065F46;
+  background: rgba(5, 150, 105, 0.15);
+  border: 1px solid rgba(5, 150, 105, 0.3);
+  color: #34d399;
 }
 
 
@@ -284,7 +284,7 @@
   font-weight: 500;
   border-radius: 4px;
   border: 1px solid var(--border);
-  background: #ffffff;
+  background: var(--bg-input);
   color: var(--text);
   cursor: pointer;
   display: inline-flex;
@@ -294,7 +294,7 @@
 }
 
 .cancel-btn:hover {
-  background: #F3F4F6;
+  background: var(--border);
   color: var(--text-h);
 }
 
@@ -422,21 +422,21 @@
 }
 
 .badge-pending {
-  background: #FEF3C7;
-  color: #D97706;
-  border: 1px solid #FCD34D;
+  background: rgba(217, 119, 6, 0.15);
+  color: #fbbf24;
+  border: 1px solid rgba(217, 119, 6, 0.3);
 }
 
 .badge-in-progress {
-  background: #DBEAFE;
-  color: #2563EB;
-  border: 1px solid #BFDBFE;
+  background: rgba(37, 99, 235, 0.15);
+  color: #60a5fa;
+  border: 1px solid rgba(37, 99, 235, 0.3);
 }
 
 .badge-completed {
-  background: #D1FAE5;
-  color: #059669;
-  border: 1px solid #A7F3D0;
+  background: rgba(5, 150, 105, 0.15);
+  color: #34d399;
+  border: 1px solid rgba(5, 150, 105, 0.3);
 }
 
 .task-card.status-completed .task-header h4 {
@@ -461,7 +461,7 @@
   font-weight: 500;
   border-radius: 4px;
   border: 1px solid var(--border);
-  background: #ffffff;
+  background: var(--bg-input);
   color: var(--text);
   cursor: pointer;
   display: inline-flex;
@@ -471,15 +471,15 @@
 }
 
 .task-action-btn.edit-btn:hover {
-  color: #2563EB;
-  border-color: #BFDBFE;
-  background: #DBEAFE;
+  color: #60a5fa;
+  border-color: rgba(37, 99, 235, 0.3);
+  background: rgba(37, 99, 235, 0.15);
 }
 
 .task-action-btn.delete-btn:hover {
-  color: #DC2626;
-  border-color: #FCA5A5;
-  background: #FEE2E2;
+  color: #dc2626;
+  border-color: rgba(220, 38, 38, 0.3);
+  background: rgba(220, 38, 38, 0.15);
 }
 
 .empty-tasks {
